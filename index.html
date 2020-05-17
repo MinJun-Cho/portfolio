@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조민준 포토폴리오</title>
+    <script src="https://kit.fontawesome.com/7b5ecf7db0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stlye.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="icon" type="" href="" />
+</head>
+
+<body>
+    <!-- 네비바 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="#">조민준 포토폴리오</a>
+        </div>
+        
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">보유 기술</li>
+                <li class="navbar__menu__item" data-link="#project">프로젝트</li>
+            </ul>
+       
+        <!-- 토글 버튼 -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- 홈 -->
+    <section id='home'>
+        <div class="home__container">
+            <img src="img/my picture.jpg" alt="내사진" class="home__avatar">
+            <h1 class="home__title">안녕하세요 <br />조민준 입니다.</h1>
+            <h2 class="home__description">프론트엔드 개발자가 되기 위해 열심히 노력하고 있습니다.</h2>
+            <button id="home__profill">프로필보기</button>
+        </div>
+    </section>
+    <!-- 내소개 -->
+    <section id="about" class="section section__container">
+        <h1>About Me</h1>
+        <p>저의 보유 스킬 및 교육 받았던 곳 입니다 스킬은 점차 늘려 가도록 하겠습니다.</p>
+        <div class="about_majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">HTML</div>
+                <div class="major__description">
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="major__title">CSS</div>
+                <div class="major__description">
+
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="major__title">JavaScript</div>
+                <div class="major__description"></div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <div class="job__description">
+                    <p class="job_name">부트캠프 '구공팩토리' 3기 수료</p>
+                    <p class="job_period">(2020.01.14 ~ 2020.04.14)</p>
+                </div>
+            </div>
+    </section>
+    <!-- 스킬 -->
+    <section id="skills" class="section">
+        <div class='section__container'>
+            <h1>보유 기술</h1>
+            <h2>기술 소개</h2>
+            <p>
+                3개월 간 공부한 것들 입니다.
+            </p>
+            <div class="skillset">
+                <div class="skillset_left">
+                    <h3 class="skillset__title">스킬들</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill__value" style="width: 80%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill__value" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset_light">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools_list">
+                            <li><span>visual studio code</span></li>
+                        </ul>
+                    </div>
+                    <div class="etcs">
+                        <h3 class="skillset__title">그외</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 프로젝트 -->
+    <section id="project" class="section">
+        <div class='section__container'>
+            <h1>My Project</h1>
+            <div class="project_categories">
+                <button class="category__btn selected" data-filter="*">
+                    All<span class=category__count>2</span>
+                </button>
+                <button class="category__btn"  data-filter="team-project">
+                    팀 프로젝트<span class=category__count>1</span>
+                </button>
+                <button class="category__btn"  data-filter="solo-project">
+                    개인 프로젝트<span class=category__count>1</span>
+                </button>
+            </div>
+            <div class="project_work">
+                <a href="https://github.com/MinJun-Cho/3rd_90market" class="project" target="blank" data-type = "team-project">
+                    <img src="img/my picture2.png" alt="구공마켓" class="project__img">
+                    <div class="project_description">
+                        <h3>구공마켓 중고거래 사이트</h3>
+                        <span>HTML,CSS,JavaScript를 이용한 번개장터 클론코딩</span>
+                    </div>
+                </a>
+                <a href="https://github.com/MinJun-Cho/parking" class="project" target="blank" data-type = "solo-project">
+                    <img src="img/my picture3.png" alt="주차장" class="project__img">
+                    <div class="project_description">
+                        <h3>간단한 입출차가 가능한 주차장 구현</h3>
+                        <span>풀스택 공부를 위해 HTML,CSS,JavaScript,node.js,mysql을 이용해서 주차장 환경 구현</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 푸터 -->
+    <section id="footer" class="section">
+        <h1 class="footer__title">내 프로필</h1>
+        <h3 class="footer__email">E-mail: minjun234@naver.com</h3>
+        <h3 class="footer__PH">P.H: 010-4549-9169</h3>
+        <h3 class="footer__Git"><a href="https://github.com/MinJun-Cho">Git: https://github.com/MinJun-Cho</a></h3>
+        <div class="footer__links">
+            <a href="https://github.com/MinJun-Cho" target="blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="footer__rights">
+            2020 민준이의 포토폴리오 사이트 제작
+        </p>
+    </section>
+
+    <!-- 화살표버튼 -->
+
+    <button class= "arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+<script src=main.js defer></script>
+
+</html>
