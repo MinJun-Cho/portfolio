@@ -39,9 +39,7 @@ var navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 
 navbarToggleBtn.addEventListener('click', function(){
     
-    navbarMenu.classList.toggle('.open');
-
-    console.log(navbarMenu.classList.toggle('open'))
+    navbarMenu.classList.toggle('open');
 
 });
 
@@ -112,6 +110,7 @@ proBtnContainer.addEventListener('click', function(e){
     var active = document.querySelector('.category__btn.selected');
 
     if(active !== null){
+        
         active.classList.remove('selected'); 
     }
 
