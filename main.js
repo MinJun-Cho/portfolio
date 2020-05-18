@@ -80,7 +80,7 @@ document.addEventListener('scroll', function(){
         arrowUp.classList.remove('visible');
     
     }
-
+    
 });
 
 arrowUp.addEventListener('click', function(){
@@ -114,7 +114,6 @@ proBtnContainer.addEventListener('click', function(e){
         active.classList.remove('selected'); 
     }
 
-    console.log(active)
 
     e.target.classList.add('selected');
 
