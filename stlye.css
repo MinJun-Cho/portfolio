@@ -517,6 +517,10 @@ p{
         display: block;
     }
 
+    .navbar__toggle-btn{
+        top:20px;
+    }
+
     .about_majors{
         flex-direction: column;
     }
